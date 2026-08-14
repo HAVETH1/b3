@@ -135,14 +135,14 @@ sequenceDiagram
 
 ## 5. Development Prompts Record
 
-| S.No. | AI Tool | Prompt Used | Purpose |
-|:---:|---|---|---|
-| **1** | **Antigravity AI** | *"Build a modern, fintech-grade Personal Finance Management Dashboard with Next.js, Supabase, and custom Vanilla CSS with zero Tailwind. Include full auth, transactions, budgets, analytics, savings goals, and dark mode."* | Initial project scaffolding, requirement specification, and technical architecture generation. |
-| **2** | **Antigravity AI** | *"Generate the PostgreSQL schema with profiles, transactions, budgets, and goals tables, complete with Row-Level Security (RLS) policies and indexes."* | Database design and secure multi-tenant data modeling. |
-| **3** | **Antigravity AI** | *"Build the complete Vanilla CSS token design system in globals.css supporting dark mode variables, glassmorphism cards, responsive grids, and micro-animations."* | Creating the fintech visual design system and responsive foundations. |
-| **4** | **Antigravity AI** | *"Create a realistic seed data generator (lib/seed.ts) to populate 6 months of historical transactions, category budgets, and savings goals for new users."* | Providing instant demonstration data for analytics and dashboard charts. |
-| **5** | **Antigravity AI** | *"Implement the full protected dashboard suite: DashboardClient, TransactionsClient with multi-filter table, BudgetsClient, AnalyticsClient with Chart.js, GoalsClient with SVG rings, and InsightsClient."* | Core business logic, frontend visualization, and full CRUD component development. |
-| **6** | **Antigravity AI** | *"Create a demo account for sign in and test it across all routes in the browser."* | End-to-end automated testing, Admin API account provisioning, and UI verification. |
+The four prompts below are the most consequential requests from the full, unedited prompt log kept in the project repository ([`PROMPTS.md`](./PROMPTS.md)) — the ones that started the build, expanded it, hardened it, and produced this report.
+
+| S.No. | Stage | AI Tool | Key Prompt | Consequence / Outcome |
+|:---:|---|---|---|---|
+| **1** | **Starting the Build** | **Claude / AI Assistant** | *"Build a modern, fintech-grade Personal Finance Management SaaS platform named FinanceIQ using Next.js 16 (App Router), Supabase Cloud, and custom Vanilla CSS with zero Tailwind. Include full authentication, transaction ledger with multi-category filters, dynamic budget planner with visual thresholds, 4 interactive Chart.js analytics views, savings goals with SVG circular rings, intelligent financial insights, dark/light theme switching, and multi-currency support."* | Scaffolded Next.js 16 App Router foundation, responsive layout shells, and tokenized Vanilla CSS design system. |
+| **2** | **Expanding the Build** | **Claude / AI Assistant** | *"Generate the complete PostgreSQL database schema with Row-Level Security (RLS) policies for multi-tenant data isolation. Create tables for profiles, transactions, budgets, and goals. Set up Supabase Storage receipts bucket with RLS policies, and enable PostgreSQL Realtime CDC replication (supabase_realtime) on the transactions table. Include a realistic 6-month seed data generator (lib/seed.ts)."* | Established zero-trust database schema, S3 receipts storage, live WebSocket CDC sync, and automated seed dataset. |
+| **3** | **Hardening the Build** | **Claude / AI Assistant** | *"Audit the application for performance bottlenecks and Vercel serverless cold-start latency. Optimize Next.js route configurations by enforcing export const dynamic = 'force-dynamic' across all protected dashboard routes, eliminate redundant Supabase auth round-trips, ensure secure server-side session resolution with getUser(), configure S3 bucket schema caching, and test all routes locally with browser automation."* | Eliminated SSR prerender blocking errors, accelerated navigation latency across all 7 dashboard modules, and secured auth verification. |
+| **4** | **Producing the Report** | **Claude / AI Assistant** | *"Generate a comprehensive, academic and industry-grade Project Report & Technical Documentation (PROJECT_REPORT.md). Include system objectives, cloud computing concepts mapping (services/databases/applications on-demand, BaaS, SOA, RLS governance, SLAs), high-resolution system architecture and workflow diagrams, ERD schemas, and testing verification walkthrough."* | Produced publication-grade project report with high-resolution system architecture and workflow diagrams. |
 
 ---
 

@@ -60,7 +60,8 @@ The architecture of FinanceIQ leverages contemporary cloud-native design paradig
 
 ### 4.1 System Architecture Diagram
 
-![FinanceIQ System Architecture](./public/architecture_diagram.jpg)
+![Figure 1 — Cloud architecture](./public/architecture_diagram.jpg)
+*Figure 1 — Cloud architecture: User → Frontend (Vercel) → Supabase Auth → Supabase Data API with RLS → Postgres + Storage → client-side Analytics rendered back into the Dashboard.*
 
 ```mermaid
 graph TD

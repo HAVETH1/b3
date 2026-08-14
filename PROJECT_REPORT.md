@@ -94,8 +94,8 @@ graph TD
 
 ### 4.2 Application Workflow
 
-![Figure 2 — End-to-end Application Workflow](./public/workflow_diagram.jpg)
-*Figure 2 — Application Workflow: User Interaction → Auth Verification → Database Query & Storage Upload → Real-Time CDC Broadcast → Dashboard Re-render.*
+![Figure 2 — Application workflow](./public/workflow_diagram.jpg)
+*Figure 2 — Application workflow: authentication, month-scoped data loading, CRUD on expenses/income/budget, and the live analytics that follow every change.*
 
 ```mermaid
 sequenceDiagram

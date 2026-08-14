@@ -14,6 +14,24 @@
 * **Predictive & Comparative Insights:** Deliver real-time, rule-based financial insights that highlight spending spikes, savings rate health, and budget deviations without requiring external manual analysis.
 * **Fintech-Grade User Experience:** Deliver an intuitive, responsive, and aesthetically engaging UI/UX with smooth micro-interactions, dark/light theme switching, and instant data reactivity.
 
+### 1.1 Functional Requirements (FR)
+* **FR-1 Authentication & Authorization:** Secure email/password signup, login, session persistence via JWT cookies, and route guard protection (`proxy.ts`).
+* **FR-2 Transaction Management:** Full CRUD operations for income and expenses with amount, category, date, description, payment method (UPI, Card, Cash, Net Banking), and receipt attachment upload.
+* **FR-3 Dynamic Budget Tracking:** Ability to define monthly limits per category with dynamic progress computation and visual status flags (`Safe` < 75%, `Warning` 75-99%, `Exceeded` >= 100%).
+* **FR-4 Interactive Analytics & Visualizations:** Interactive Chart.js charts displaying 6-month income vs. expense curves, category doughnut distribution, monthly spending bars, and net balance trajectory.
+* **FR-5 Savings Goal Planner:** Goal creation with milestone targets, target dates, interactive SVG circular progress rings, and quick contribution modal.
+* **FR-6 AI & Rule-Based Financial Insights:** Automatic spending anomaly detection, savings rate evaluation, burn rate analysis, and predictive linear regression month-end forecasting.
+* **FR-7 Cloud Receipt Attachment:** S3-compatible cloud object storage upload with file format validation (PNG, JPG, PDF up to 5MB) and in-app preview.
+* **FR-8 User Settings & Customization:** Multi-currency support (₹ INR, $ USD, € EUR, £ GBP), Light/Dark theme switching, and one-click full transaction CSV data export.
+
+### 1.2 Non-Functional Requirements (NFR)
+* **NFR-1 Security & Multi-Tenancy (Zero Trust):** Strict database-level isolation using PostgreSQL Row-Level Security (RLS) ensuring `auth.uid() = user_id` for all queries and storage objects.
+* **NFR-2 Performance & Response Time:** Serverless sub-second page loads (< 1s) with Next.js App Router dynamic streaming and optimized database indexing on compound keys (`user_id, date DESC`).
+* **NFR-3 High Availability & Reliability:** 99.9%+ uptime backed by multi-zone cloud infrastructure (Vercel Serverless Edge + Supabase Cloud PostgreSQL).
+* **NFR-4 Data Integrity & ACID Compliance:** PostgreSQL relational constraints, cascading foreign keys, and atomic transactions to prevent balance inconsistencies or orphaned records.
+* **NFR-5 Responsiveness & Accessibility:** 100% fluid mobile, tablet, and desktop responsive layouts with accessible form labels, keyboard navigation, and dark/light contrast compliance.
+* **NFR-6 Scalability:** Stateless application layer with elastic autoscaling serverless compute and connection pooling (PgBouncer) capable of handling concurrent traffic bursts.
+
 ---
 
 ## 2. Cloud Computing & Cloud Strategy Concepts Used

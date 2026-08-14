@@ -60,6 +60,8 @@ The architecture of FinanceIQ leverages contemporary cloud-native design paradig
 
 ### 4.1 System Architecture Diagram
 
+![FinanceIQ System Architecture](./public/architecture_diagram.jpg)
+
 ```mermaid
 graph TD
     User([End User / Client Browser]) -->|HTTPS / Next.js Client| NextApp[Next.js 16 Web Application]

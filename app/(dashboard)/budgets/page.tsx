@@ -3,6 +3,8 @@ import { createClient } from '@/lib/supabase/server'
 import { BudgetsClient } from './BudgetsClient'
 import { getCurrentMonth, getMonthRange } from '@/lib/utils'
 
+export const dynamic = 'force-dynamic'
+
 export default async function BudgetsPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()

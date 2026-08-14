@@ -3,11 +3,11 @@ import { createClient } from '@/lib/supabase/server'
 import { DashboardClient } from './DashboardClient'
 import { getCurrentMonth, getMonthRange, getPreviousMonth } from '@/lib/utils'
 
+export const dynamic = 'force-dynamic'
+
 export default async function DashboardPage() {
   const supabase = await createClient()
-  // Auth is already enforced by layout.tsx — reuse the session directly
-  const { data: { session } } = await supabase.auth.getSession()
-  const user = session?.user
+  const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/login')
 
   const month = getCurrentMonth()

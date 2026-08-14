@@ -2,6 +2,8 @@ import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import { GoalsClient } from './GoalsClient'
 
+export const dynamic = 'force-dynamic'
+
 export default async function GoalsPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()

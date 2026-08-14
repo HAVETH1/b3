@@ -5,7 +5,9 @@ import { getCurrentMonth, getMonthRange, getPreviousMonth } from '@/lib/utils'
 
 export default async function DashboardPage() {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
+  // Auth is already enforced by layout.tsx — reuse the session directly
+  const { data: { session } } = await supabase.auth.getSession()
+  const user = session?.user
   if (!user) redirect('/login')
 
   const month = getCurrentMonth()

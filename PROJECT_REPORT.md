@@ -149,55 +149,55 @@ The four prompts below are the most consequential requests from the full, unedit
 ## 6. Screenshots & Feature Walkthrough
 
 ### 6.1 Authentication (Login Page)
-![Login Page](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/login_page_1786655121423.png)
+![Login Page](./preview%20images/01_login_page.png)
 *Clean, centered fintech login card with email/password validation, show/hide password toggling, and fast session establishment.*
 
 ---
 
 ### 6.2 Overview Dashboard
-![Dashboard](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/dashboard_with_data_1786655152423.png)
+![Dashboard](./preview%20images/02_dashboard.png)
 *High-density financial cockpit displaying calculated balance (₹81,410), monthly income/expense changes, recent ledger rows, active goals, and quick actions.*
 
 ---
 
 ### 6.3 Transactions Ledger
-![Transactions](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/transactions_page_1786655164797.png)
+![Transactions](./preview%20images/03_transactions.png)
 *Full-featured transaction ledger with multi-criteria real-time filtering (search, type, category, month), column sorting, and inline edit/delete modals.*
 
 ---
 
 ### 6.4 Budget Management
-![Budgets](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/budgets_page_1786655176532.png)
+![Budgets](./preview%20images/04_budgets.png)
 *Category-wise monthly spending limits with automatic progress indicators, percentage computations, and status alerts (On Track, Near Limit, Over Budget).*
 
 ---
 
 ### 6.5 Financial Analytics & Visualizations
-![Analytics](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/analytics_page_1786655191073.png)
+![Analytics](./preview%20images/05_analytics.png)
 *Interactive Chart.js visualizations including 6-month Income vs. Expense area charts, monthly grouped bar charts, category spending doughnut, and net savings trajectories.*
 
 ---
 
 ### 6.6 Savings Goals Tracker
-![Goals](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/goals_page_1786655207014.png)
+![Goals](./preview%20images/06_goals.png)
 *Goal milestone tracking with customized SVG progress rings, target date countdowns, color/emoji customization, and quick deposit workflows.*
 
 ---
 
 ### 6.7 Financial Insights Engine
-![Insights](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/insights_page_1786655218334.png)
+![Insights](./preview%20images/07_insights.png)
 *Dynamic rule-based insights analyzing savings ratios, detecting high spending categories, and providing budget health checks.*
 
 ---
 
 ### 6.8 Settings & Personalization
-![Settings](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/settings_page_1786655231324.png)
+![Settings](./preview%20images/08_settings.png)
 *Profile management, global currency selection, theme toggle, full CSV transaction data export, and nuclear data wipe options.*
 
 ---
 
 ### 6.9 Dark Mode Theme
-![Dark Mode](file:///C:/Users/saras/.gemini/antigravity-ide/brain/ba2ce017-eac8-45c1-8c72-2c8b52557575/dark_mode_page_1786655243515.png)
+![Dark Mode](./preview%20images/09_dark_mode.png)
 *High-contrast, eye-friendly dark mode with glowing border accents and tokenized HSL color palettes.*
 
 ---
